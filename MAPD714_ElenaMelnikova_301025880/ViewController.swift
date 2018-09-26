@@ -41,6 +41,19 @@ class ViewController: UIViewController {
           
             str = String(input.prefix(8))
         }
+        
+
+        //Remove last "0" for float values
+        if str.contains(".") {
+            while str.last! == "0" {
+                str = String(str.dropLast())
+            }
+        }
+
+        //Remove last "."
+        if str.last == "." {
+            str = String(str.dropLast())
+        }
 
         return str
     }
@@ -53,6 +66,11 @@ class ViewController: UIViewController {
     
 
     @IBAction func numberField(_ sender: UIButton) {
+
+        //Do not allow enter second dot if dot already present in label
+        if sender.tag == 0 && (label.text!.contains(".")) {
+            return
+        }
 
         if performingMath == true {
           
@@ -340,4 +358,5 @@ class ViewController: UIViewController {
         }
         return res
     }
+    
 }
