@@ -8,6 +8,36 @@
 
 import UIKit
 
+//@IBDesignable class PaddingLabel: UILabel {
+//
+//    @IBInspectable var topInset: CGFloat = 20.0
+//    @IBInspectable var bottomInset: CGFloat = 20.0
+//    @IBInspectable var leftInset: CGFloat = 20.0
+//    @IBInspectable var rightInset: CGFloat = 20.0
+//
+//    override func drawText(in rect: CGRect) {
+//        let insets = UIEdgeInsets.init(top: topInset, left: leftInset, bottom: bottomInset, right: rightInset)
+//        super.drawText(in: UIEdgeInsetsInsetRect(rect, insets))
+//    }
+//
+//    override var intrinsicContentSize: CGSize {
+//        let size = super.intrinsicContentSize
+//        return CGSize(width: size.width + leftInset + rightInset,
+//                      height: size.height + topInset + bottomInset)
+//    }
+//}
+
+
+//extension UITextView{
+//
+//    func setPadding(){
+//
+//        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: self.frame.height))
+//        self.leftView = paddingView
+//        self.leftView = .always
+//    }
+//}
+
 class ViewController: UIViewController {
 
     
@@ -24,9 +54,7 @@ class ViewController: UIViewController {
     var performingMath = false;
     
 
-    @IBOutlet weak var label: UILabel!
-    
-
+    @IBOutlet weak var label:UILabelPadding! //UILabel! with paddings that set in UILabelPaddind.swift
     
     func normalize(input:String) -> String {
      
