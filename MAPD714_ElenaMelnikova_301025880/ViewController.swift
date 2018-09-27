@@ -33,6 +33,16 @@ class ViewController: UIViewController {
             
             str = String(input.prefix(9))
         }
+        if str.contains(".") {
+            while str.last! == "0" {
+                str = String(str.dropLast())
+            }
+        }
+        
+        //Remove last "."
+        if str.last == "." {
+            str = String(str.dropLast())
+        }
         
         return str
     }
@@ -43,6 +53,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func numberField(_ sender: UIButton) {
+        
+        if sender.tag == 0 && (label.text!.contains(".")) {
+            return
+        }
         
         if performingMath == true {
             
