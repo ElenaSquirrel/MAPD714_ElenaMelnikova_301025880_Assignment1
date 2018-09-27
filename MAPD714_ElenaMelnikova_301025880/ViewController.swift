@@ -54,18 +54,177 @@ class ViewController: UIViewController {
 
     @IBAction func numberField(_ sender: UIButton) {
 
-     
+        if performingMath == true {
+
+            performingMath = false
+            
+            if sender.tag == 0  {
+               
+                label.text = "0."
+
+                screenNumber = Double(label.text!)!
+            } else {
+                
+                let str = normalize(input: String(sender.tag - 1))
+        
+                screenNumber = Double(str)!
+               
+                label.text = str
+            }
+        }
         
     }
 
     @IBAction func operationsField(_ sender: UIButton) {
 
+        //"C" clicked
+        if sender.tag == 11
+        {
+            label.text = "0"
+            previousNumber = nil;
+            screenNumber = 0;
+            label.text = "0";
+            operation = nil;
+            performingMath = false;
+            return
+        }
         
-        
-    
-    
-    
-    
+       
+        if label.text != "" && sender.tag != 18
+        {
+            if performingMath {
+            
+                operation = sender.tag
+
+                label.text = operationToLabel(tag: sender.tag)
+                return
+            }
+
+            if previousNumber != nil && screenNumber != nil {
+                
+                if (screenNumber! == 0 && operation! == 14) {
+                    //Division by 0
+                    
+                    //Set error
+                    previousNumber = nil
+                    screenNumber = nil
+                    operation = nil
+                    label.text = "Error"
+                    performingMath = false
+                    return
+                } else {
+                   
+                    let res = oper(num1:previousNumber, num2:screenNumber, operation:operation!)
+                
+                    let str = normalize(input: res)
+             
+                    let dbl = Double(str)
+                    
+                    label.text = str
+ 
+                    previousNumber = dbl
+                    
+                    screenNumber = nil
+ 
+                    operation = sender.tag
+
+                    performingMath = true
+                    
+                    return
+                }
+            }
+        }
+        else if sender.tag == 18
+        {
+            //Operation "="
+
+            performingMath = false
+  
+            if previousNumber != nil && screenNumber != nil {
+                
+                if (screenNumber! == 0 && operation! == 14) {
+                    //Division by 0
+                    
+                    //Set error
+                    previousNumber = nil
+                    screenNumber = nil
+                    operation = nil
+                    label.text = "Error"
+                    performingMath = false
+                    return
+                } else {
+                  
+                    let res = oper(num1:previousNumber, num2:screenNumber, operation:operation!)
+              
+                    let str = normalize(input: res)
+              
+                    let dbl = Double(str)
+              
+                    label.text = str
+                    
+                    previousNumber = nil
+
+                    screenNumber = dbl
+
+                    operation = nil
+
+                    performingMath = false
+                    
+                    return
+                }
+            }
+        }
     }
     
+    func operationToLabel(tag:Int) -> String {
+        switch tag {
+        case 13:
+            //Square root
+            return "√"
+        case 14:
+            //Division
+            return "/"
+        case 15:
+            //Multiplication
+            return "X"
+        case 16:
+            //Subtraction
+            return "-"
+        case 17:
+            //Sum
+            return "+"
+        default:
+            return ""
+        }
+    }
+            
+        
+    func oper(num1: Double?, num2: Double?, operation:Int) -> Double {
+        var res: Double = 0
+        switch operation {
+        case 13:
+            //Square root
+            res = num1!.squareRoot()
+            break
+        case 14:
+            //Division
+            res = num1! / num2!
+            break;
+        case 15:
+            //Multiplication
+            res = num1! * num2!
+            break;
+        case 16:
+            //Subtraction
+            res = num1! - num2!
+            break;
+        case 17:
+            //Sum
+            res = Double(num1!) + Double(num2!)
+            break;
+        default:
+            res = num2!
+        }
+        return res
+    }
 }
