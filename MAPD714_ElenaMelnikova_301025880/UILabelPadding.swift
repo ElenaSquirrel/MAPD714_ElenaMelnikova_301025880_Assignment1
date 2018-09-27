@@ -10,6 +10,8 @@ import Foundation
 
 // UILabel padding https://stackoverflow.com/questions/40405711/uilabel-border-and-padding
 
+// Used for setting constrains for buttons and label (Storyboard Equal Height Equal Width Horizontal Vertical Spacing) https://www.youtube.com/watch?v=LSV6VcGdXPc
+
 class UILabelPadding: UILabel {
     
     let padding = UIEdgeInsets(top: 2, left: 8, bottom: 2, right: 8)

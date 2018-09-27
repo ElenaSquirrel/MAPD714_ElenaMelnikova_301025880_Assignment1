@@ -1,7 +1,7 @@
 //
 //  ViewController.swift
 //  MAPD714_ElenaMelnikova_301025880
-//
+//  Calculator
 //  Created by Elena Melnikova on 2018-09-25.
 //  Copyright © 2018 Centennial College. All rights reserved.
 //
@@ -12,10 +12,13 @@ import UIKit
 class ViewController: UIViewController {
     //Number displayed on screen
     var screenNumber:Double? = nil
+    
     //Number displayed on screen before operation
     var previousNumber:Double? = nil
+    
     //Operation
     var operation:Int? = nil
+    
     //Flag showing if operation is in progress
     var performingMath = false
     
@@ -123,7 +126,7 @@ class ViewController: UIViewController {
                 //Entered other number (not ".")
                 
                 //If label was not either "0" or "Error"
-                if label.text != "0" && label.text != "Error" {
+                if label.text != "0" && label.text != "-0" && label.text != "Error" {
                     
                     //Append number to string already in label
                     var str = String(label.text!+String(sender.tag-1))
@@ -162,7 +165,6 @@ class ViewController: UIViewController {
         if sender.tag == 11
         {
             //Initialize all data
-            label.text = "0"
             previousNumber = nil;
             screenNumber = 0;
             label.text = "0";
@@ -177,11 +179,13 @@ class ViewController: UIViewController {
         }
         
         //"+/-" button clicked
-        if sender.tag == 12 {
+        if sender.tag == 12 && performingMath == false {
             //Change label and screenNumber sign
             screenNumber = -screenNumber!
-            let str = normalize(input: screenNumber!)
+            let str = normalize(input:screenNumber!)
             label.text = str
+            return
+        } else if sender.tag == 12 && performingMath == true{
             return
         }
         
