@@ -8,6 +8,8 @@
 import UIKit
 import Foundation
 
+// UILabel padding https://stackoverflow.com/questions/40405711/uilabel-border-and-padding
+
 class UILabelPadding: UILabel {
     
     let padding = UIEdgeInsets(top: 2, left: 8, bottom: 2, right: 8)
