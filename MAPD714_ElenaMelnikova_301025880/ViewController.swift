@@ -146,7 +146,7 @@ class ViewController: UIViewController {
                 if label.text != "0" && label.text != "-0" && label.text != "Error" {
                     
                     //Append number to string already in label
-                    var str = String(label.text!+String(sender.tag-1))
+                    let str = String(label.text!+String(sender.tag-1))
                     
                     //str = normalize(input: str)
                     
@@ -230,7 +230,8 @@ class ViewController: UIViewController {
             
             //Update screenNumber
             screenNumber = dbl
-            
+            operation = sender.tag
+
             //Set performanceMath flag
             performingMath = true
             
@@ -291,7 +292,7 @@ class ViewController: UIViewController {
                 performingMath = false
                 return
             }            //Normalize result
-            let str = normalize(input: res)
+            var str = normalize(input: res)
             
             //Normalize double
             let dbl = Double(str)
@@ -309,10 +310,20 @@ class ViewController: UIViewController {
             screenNumber = dbl
             
             //Update operation
-            operation = sender.tag
+            //operation = sender.tag
             
             //Set performanceMath flag
             performingMath = true
+            
+            if operation! == 16 {
+                previousNumber = -previousNumber!
+                operation = 17
+            }
+            
+            if operation! == 14 {
+                previousNumber = 1 / previousNumber!
+                operation = 15
+            }
             
             return
         }
