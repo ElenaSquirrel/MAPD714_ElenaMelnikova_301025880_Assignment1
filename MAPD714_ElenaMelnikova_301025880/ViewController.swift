@@ -10,11 +10,12 @@ import UIKit
 
 
 class ViewController: UIViewController {
+    
     //Number displayed on screen
     
     var screenNumber:Double? = nil
     
-
+    
     //Number displayed on screen before operation
     var previousNumber:Double? = nil
     
@@ -27,9 +28,6 @@ class ViewController: UIViewController {
     var eql = false
     
     @IBOutlet weak var label:UILabelPadding! //UILabel! with paddings that set in UILabelPaddind.swift
-
- 
-
     
     //Normalize string to string
     
@@ -69,10 +67,7 @@ class ViewController: UIViewController {
         return normalize(input:str)
     }
     
-    
-    
     //Process number entered
-    
     
     @IBAction func numberField(_ sender: UIButton) {
         eql = false
@@ -216,6 +211,13 @@ class ViewController: UIViewController {
             label.text = "Error"
             performingMath = false
             return
+        }else if operation == 14 && screenNumber! == 0 {
+            //Set error
+            previousNumber = nil
+            screenNumber = nil
+            label.text = "Error"
+            performingMath = false
+            return
         } else if sender.tag == 13 && screenNumber! >= 0 {
             let res = oper(num1:previousNumber, num2:screenNumber, operation:13)
             
@@ -231,7 +233,7 @@ class ViewController: UIViewController {
             //Update screenNumber
             screenNumber = dbl
             operation = sender.tag
-
+            
             //Set performanceMath flag
             performingMath = true
             
@@ -246,42 +248,49 @@ class ViewController: UIViewController {
                 performingMath = true
                 return
             }
-                let res = oper(num1:previousNumber, num2:screenNumber, operation:operation!)
-                if res > 99999999 || res < -99999999 || (res > 0 && res < 0.000001) || (res < 0 && res > -0.000001 ) {
-                    //Set error
-                    previousNumber = nil
-                    screenNumber = nil
-                    label.text = "Overflow"
-                    performingMath = false
-                    return
-                }
-                //Normalize result
-                let str = normalize(input: res)
-                
-                //Normalize double
-                let dbl = Double(str)
-                //Update label
-                label.text = str
-            
-                //Update previousNumber
-                previousNumber = nil
-                
-                //Update screenNumber
-                screenNumber = dbl
-                
-                //Update operation
+            if operation == nil {
                 operation = sender.tag
-                
-                //Set performanceMath flag
-                performingMath = true
                 return
-        
+            }
+            let res = oper(num1:previousNumber, num2:screenNumber, operation:operation!)
+            if res > 99999999 || res < -99999999 || (res > 0 && res < 0.000001) || (res < 0 && res > -0.000001 ) {
+                //Set error
+                previousNumber = nil
+                screenNumber = nil
+                label.text = "Overflow"
+                performingMath = false
+                return
+            }
+            //Normalize result
+            let str = normalize(input: res)
+            
+            //Normalize double
+            let dbl = Double(str)
+            //Update label
+            label.text = str
+            
+            //Update previousNumber
+            previousNumber = nil
+            
+            //Update screenNumber
+            screenNumber = dbl
+            
+            //Update operation
+            operation = sender.tag
+            
+            //Set performanceMath flag
+            performingMath = true
+            return
+            
         } else
         {
             if previousNumber == nil {
                 previousNumber = screenNumber
                 //Update operation
                 performingMath = true
+            }
+            if operation == nil {
+                return
             }
             let res = oper(num1:previousNumber, num2:screenNumber, operation:operation!)
             if res > 99999999 || res < -99999999 || (res > 0 && res < 0.000001) || (res < 0 && res > -0.000001 ) {
@@ -305,7 +314,7 @@ class ViewController: UIViewController {
                 previousNumber = screenNumber
                 eql = true
             }
-    
+            
             //Update screenNumber
             screenNumber = dbl
             
