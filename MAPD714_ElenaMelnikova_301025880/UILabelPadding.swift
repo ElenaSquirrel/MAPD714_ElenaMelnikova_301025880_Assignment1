@@ -1,10 +1,13 @@
-//
+
 //  UILabelPadding.swift
 //  MAPD714_ElenaMelnikova_301025880
-//
+
+//  Basic Calculator version 1.0
 //  Created by Elena Melnikova on 2018-09-26.
+//  Student ID: 301025880
+//  Last modification date: 2018-10-21
 //  Copyright © 2018 Centennial College. All rights reserved.
-//
+
 import UIKit
 import Foundation
 

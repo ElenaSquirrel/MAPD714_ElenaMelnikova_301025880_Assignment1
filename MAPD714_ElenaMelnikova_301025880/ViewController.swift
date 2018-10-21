@@ -1,13 +1,18 @@
-//
+
 //  ViewController.swift
 //  MAPD714_ElenaMelnikova_301025880
-//  Calculator
-//  Created by Elena Melnikova on 2018-09-25.
+
+//  Basic Calculator version 1.0
+//  Created by Elena Melnikova on 2018-09-26.
+//  Student ID: 301025880
+//  Last modification date: 2018-10-21
+
+//  Version history: Basic Calculator version 1.0; Basic Calculator with Options Screen version 1.1; Calculator with Tab Bar Controller version 1.2
+//  Program description:  Basic Calculator allows to user to execute simple math operations such as sum, deduction, multiplication and division. Also, a user is able to get square root, work with negative and decimal digits.
 //  Copyright © 2018 Centennial College. All rights reserved.
-//
+
 
 import UIKit
-
 
 class ViewController: UIViewController {
     
@@ -359,7 +364,6 @@ class ViewController: UIViewController {
             return ""
         }
     }
-    
     
     func oper(num1: Double?, num2: Double?, operation:Int) -> Double {
         var res: Double = 0

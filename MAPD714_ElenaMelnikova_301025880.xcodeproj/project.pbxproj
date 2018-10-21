@@ -13,6 +13,7 @@
 		C01AA4E8215B32DF00E3CE57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C01AA4E6215B32DF00E3CE57 /* Main.storyboard */; };
 		C01AA4EA215B32E000E3CE57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C01AA4E9215B32E000E3CE57 /* Assets.xcassets */; };
 		C01AA4ED215B32E000E3CE57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C01AA4EB215B32E000E3CE57 /* LaunchScreen.storyboard */; };
+		C0C51A9F217CE9A70091102B /* Splash_image.png in Resources */ = {isa = PBXBuildFile; fileRef = C0C51A9E217CE9A70091102B /* Splash_image.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C01AA4E9215B32E000E3CE57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C01AA4EC215B32E000E3CE57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C01AA4EE215B32E000E3CE57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0C51A9E217CE9A70091102B /* Splash_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Splash_image.png; path = ../../Splash_image.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +60,12 @@
 			children = (
 				C01AA4E2215B32DF00E3CE57 /* AppDelegate.swift */,
 				C01AA4E4215B32DF00E3CE57 /* ViewController.swift */,
+				C00E194C215BD9EC000F3653 /* UILabelPadding.swift */,
 				C01AA4E6215B32DF00E3CE57 /* Main.storyboard */,
 				C01AA4E9215B32E000E3CE57 /* Assets.xcassets */,
+				C0C51A9E217CE9A70091102B /* Splash_image.png */,
 				C01AA4EB215B32E000E3CE57 /* LaunchScreen.storyboard */,
 				C01AA4EE215B32E000E3CE57 /* Info.plist */,
-				C00E194C215BD9EC000F3653 /* UILabelPadding.swift */,
 			);
 			path = MAPD714_ElenaMelnikova_301025880;
 			sourceTree = "<group>";
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0C51A9F217CE9A70091102B /* Splash_image.png in Resources */,
 				C01AA4ED215B32E000E3CE57 /* LaunchScreen.storyboard in Resources */,
 				C01AA4EA215B32E000E3CE57 /* Assets.xcassets in Resources */,
 				C01AA4E8215B32DF00E3CE57 /* Main.storyboard in Resources */,
@@ -295,7 +299,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ca.centennialcollege.MAPD714-ElenaMelnikova-301025880";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -314,7 +318,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ca.centennialcollege.MAPD714-ElenaMelnikova-301025880";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
