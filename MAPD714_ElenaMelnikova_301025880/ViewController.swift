@@ -21,9 +21,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
     //UILabel! with paddings that set in UILabelPaddind.swift
     @IBOutlet weak var label: UILabelPadding!
-    
     //Number displayed on screen
     
     var screenNumber:Double? = nil
@@ -38,6 +38,7 @@ class ViewController: UIViewController {
     var performingMath = false
     
     var eql = false
+    
     //Normalize string to string
     
     func normalize(input:String) -> String {
@@ -76,9 +77,7 @@ class ViewController: UIViewController {
         return normalize(input:str)
     }
     
-    
     //Process number entered
-    
     @IBAction func numberField(_ sender: UIButton) {
         eql = false
         //Do not allow enter second "." if "." already presents in the label
@@ -404,3 +403,4 @@ class ViewController: UIViewController {
         return res
     }
 }
+
