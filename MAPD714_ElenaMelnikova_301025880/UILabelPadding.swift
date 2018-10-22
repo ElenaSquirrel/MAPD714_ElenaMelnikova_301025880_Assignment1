@@ -29,3 +29,4 @@ class UILabelPadding: UILabel {
         return CGSize(width: width, height: heigth)
     }
 }
+
