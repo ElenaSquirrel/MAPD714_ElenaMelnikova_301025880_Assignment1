@@ -3,23 +3,30 @@
 //  MAPD714_ElenaMelnikova_301025880
 
 //  Basic Calculator version 1.0
+//  Program description:  Basic Calculator allows users to execute simple math operations such as sum, deduction, multiplication and division. Also, users are able to get square root, work with negative and decimal digits.
 //  Created by Elena Melnikova on 2018-09-26.
 //  Student ID: 301025880
 //  Last modification date: 2018-10-21
 
-//  Version history: Basic Calculator version 1.0; Basic Calculator with Options Screen version 1.1; Calculator with Tab Bar Controller version 1.2
-//  Program description:  Basic Calculator allows to user to execute simple math operations such as sum, deduction, multiplication and division. Also, a user is able to get square root, work with negative and decimal digits.
-//  Copyright © 2018 Centennial College. All rights reserved.
+//  Version history:
+//  Calculator with Tab Bar Controller version 1.2
+//  Scientific Calculator and Options Screens added. Options Screen allows users to pick and change background color and text color for both Basic and Scientific Calculators.
+//  Basic Calculator with Options Screen version 1.1
+//  Options Screens were added.
+//  Basic Calculator version 1.0
+//  Basic Calculator and Splash Screen created.
 
+//  Copyright © 2018 Centennial College. All rights reserved.
 
 import UIKit
 
 class ViewController: UIViewController {
+    //UILabel! with paddings that set in UILabelPaddind.swift
+    @IBOutlet weak var label: UILabelPadding!
     
     //Number displayed on screen
     
     var screenNumber:Double? = nil
-    
     
     //Number displayed on screen before operation
     var previousNumber:Double? = nil
@@ -31,9 +38,6 @@ class ViewController: UIViewController {
     var performingMath = false
     
     var eql = false
-    
-    @IBOutlet weak var label:UILabelPadding! //UILabel! with paddings that set in UILabelPaddind.swift
-    
     //Normalize string to string
     
     func normalize(input:String) -> String {
@@ -71,6 +75,7 @@ class ViewController: UIViewController {
         let str = String(input)
         return normalize(input:str)
     }
+    
     
     //Process number entered
     
@@ -175,7 +180,6 @@ class ViewController: UIViewController {
     
     //Process operation entered
     @IBAction func operationsField(_ sender: UIButton) {
-        
         if sender.tag != 18 {
             eql = false
         }
@@ -199,6 +203,10 @@ class ViewController: UIViewController {
         
         if sender.tag != 18 && operation == 18 {
             previousNumber = nil;
+        }
+        
+        if screenNumber == nil {
+            screenNumber = 0
         }
         
         //"+/-" button clicked
@@ -305,7 +313,9 @@ class ViewController: UIViewController {
                 label.text = "Overflow"
                 performingMath = false
                 return
-            }            //Normalize result
+            }
+            
+            //Normalize result
             var str = normalize(input: res)
             
             //Normalize double
@@ -342,7 +352,6 @@ class ViewController: UIViewController {
             return
         }
     }
-    
     func operationToLabel(tag:Int) -> String {
         switch tag {
         case 13:

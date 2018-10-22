@@ -26,7 +26,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="numberField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="akh-0i-fc5"/>
+                                    <action selector="numberField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vwV-zu-0fP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTb-1U-39t">
@@ -37,7 +37,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="numberField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ksK-C8-ZOO"/>
+                                    <action selector="numberField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vEG-Ja-Wj1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5t-4E-TZl">
@@ -48,7 +48,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="operationsField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EX1-ia-Nhh"/>
+                                    <action selector="operationsField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z3e-2e-g7k"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUw-iV-Zfs">
@@ -59,7 +59,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="numberField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QBE-jK-7Jm"/>
+                                    <action selector="numberField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0S2-pg-S8w"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvj-mI-6U5">
@@ -70,7 +70,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="numberField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wqb-xB-ss2"/>
+                                    <action selector="numberField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DI6-ql-kUq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qe-pS-zgF">
@@ -81,7 +81,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="numberField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v5j-Is-Xro"/>
+                                    <action selector="numberField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GX4-cc-YP5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5i-JI-9G7">
@@ -92,7 +92,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="operationsField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7c2-hV-7uX"/>
+                                    <action selector="operationsField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DZy-PZ-kZQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vT-XV-yXW">
@@ -103,7 +103,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="operationsField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6kS-bP-yL9"/>
+                                    <action selector="operationsField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ll6-BG-2NS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tuw-kt-cyz">
@@ -114,7 +114,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="operationsField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iiJ-wK-RIK"/>
+                                    <action selector="operationsField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XKA-Kw-k1b"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="976-bE-eIQ">
@@ -125,7 +125,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="operationsField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3zv-cU-srd"/>
+                                    <action selector="operationsField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="leR-1G-GEi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Thk-BN-gaQ">
@@ -136,7 +136,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="numberField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nq7-mI-cvb"/>
+                                    <action selector="numberField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a1F-Cg-6r5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvG-ts-aRh">
@@ -147,7 +147,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="numberField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m6R-NH-4Q3"/>
+                                    <action selector="numberField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JpK-S0-ANj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBZ-Nx-9Qs">
@@ -158,7 +158,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="operationsField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Dz-2w-5ad"/>
+                                    <action selector="operationsField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vtf-kz-lD3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTQ-yt-fy0">
@@ -169,7 +169,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="numberField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8hA-XY-GId"/>
+                                    <action selector="numberField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2tP-DF-Mgp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spI-VC-9dy">
@@ -180,7 +180,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="numberField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yX4-rJ-nHj"/>
+                                    <action selector="numberField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nXe-sP-Ka2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKs-ko-oJm">
@@ -191,7 +191,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="operationsField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zCB-pA-6uf"/>
+                                    <action selector="operationsField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xoj-8h-k8s"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QND-0y-77S">
@@ -202,7 +202,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="numberField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l2A-SS-AVP"/>
+                                    <action selector="numberField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oby-um-Dae"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZcQ-Jd-D6x">
@@ -213,7 +213,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="operationsField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qYV-wt-ObT"/>
+                                    <action selector="operationsField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ObS-5E-kuy"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLj-AY-jzx" userLabel="0" customClass="UILabelPadding" customModule="MAPD714_ElenaMelnikova_301025880" customModuleProvider="target">
@@ -235,7 +235,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="numberField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ugT-Ms-hdz"/>
+                                    <action selector="numberField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EOv-zQ-5wG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -325,7 +325,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="label" destination="aLj-AY-jzx" id="x3j-Uf-XYl"/>
+                        <outlet property="label" destination="aLj-AY-jzx" id="JDp-Ik-gpy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
